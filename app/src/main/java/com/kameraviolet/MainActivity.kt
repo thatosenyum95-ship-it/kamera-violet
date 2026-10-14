@@ -3,6 +3,7 @@ package com.kameraviolet
 import android.Manifest
 import android.content.pm.PackageManager
 import android.graphics.Color
+import android.content.Intent
 import android.os.Bundle
 import android.view.Gravity
 import android.view.ViewGroup
@@ -97,6 +98,14 @@ class MainActivity : AppCompatActivity() {
             setOnClickListener { capturePhoto("sesudah_sunscreen.jpg", "Foto sesudah") }
         }
         root.addView(afterButton, LinearLayout.LayoutParams(-1, dp(52)))
+
+        val compareButton = Button(this).apply {
+            text = "Bandingkan foto"
+            setOnClickListener {
+                startActivity(Intent(this@MainActivity, ComparisonActivity::class.java))
+            }
+        }
+        root.addView(compareButton, LinearLayout.LayoutParams(-1, dp(52)))
 
         statusText = TextView(this).apply {
             text = "Posisikan wajah di tengah dan gunakan pencahayaan yang stabil."
