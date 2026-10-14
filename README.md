@@ -7,6 +7,7 @@ Aplikasi Android sederhana untuk membantu memeriksa konsistensi visual wajah seb
 ## Fitur awal
 - Pratinjau kamera depan.
 - Ambil foto kondisi sebelum dan sesudah.
+- Bandingkan foto secara lokal dengan peta perubahan piksel.
 - Pemrosesan gambar dilakukan di perangkat; tidak ada unggahan ke server.
 - Dapat digunakan tanpa internet setelah APK terpasang.
 - GitHub Actions membangun APK debug secara otomatis.
@@ -19,7 +20,8 @@ Buka tab **Actions**, pilih workflow **Build Android APK**, lalu buka hasil run 
 2. Ambil foto kondisi awal.
 3. Oleskan sunscreen sesuai petunjuk pada kemasan.
 4. Ambil foto kedua dengan posisi dan pencahayaan serupa.
-5. Gunakan perbandingan sebagai pemeriksaan visual saja. Jangan mengandalkan skor atau warna layar sebagai bukti perlindungan UV.
+5. Tekan **Bandingkan foto** untuk melihat foto berdampingan dan peta perbedaan piksel. Peta ini menunjukkan perubahan gambar, bukan lokasi sunscreen yang pasti.
+6. Jangan mengandalkan warna peta sebagai bukti pemerataan, SPF, atau perlindungan UV.
 
 ## Privasi
-Foto diproses secara lokal. Aplikasi versi awal tidak meminta izin internet dan tidak mengunggah foto.
+Foto diproses secara lokal. Aplikasi tidak meminta izin internet dan tidak mengunggah foto. Foto disimpan sementara di cache aplikasi dan dapat terhapus saat cache dibersihkan.
