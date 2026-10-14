@@ -8,6 +8,7 @@
         android:label="Kamera Violet"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ComparisonActivity" android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
