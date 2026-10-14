@@ -84,8 +84,6 @@ class ComparisonActivity : AppCompatActivity() {
             }
             root.addView(legend)
 
-            before.recycle()
-            after.recycle()
         }
 
         val caution = TextView(this).apply {
